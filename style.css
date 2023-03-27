@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: none;
+}
+/* navbar */
+.discount {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+.nav_link {
+  list-style-type: none;
+}
+
+.nav_link--item {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.header_icons span {
+  padding-right: 4px;
+}
+
+/* main */
+main {
+  background: #000;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+}
+.section1 article,
+.section1 aside {
+  width: 50%;
+}
+
+.section1 article h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 55px 0 0 80px;
+}
+
+.main_content,
+.sub_content {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin: 65px 0 0 80px;
+  font-size: 14px;
+}
+
+/* section 2 */
+
+.section2 {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 article,
+.section2 aside {
+  width: 50%;
+}
+
+.section2 aside img {
+  margin-left: 30px;
+}
+.section2 article p {
+  margin-left: 50px;
+}
+
+.section2 article p {
+  font-size: 14px;
+  color: white;
+}
+.drop {
+  color: gold;
+  font-size: 20px;
+}
+
+/* section3 */
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-right: 20px;
+}
+.section3 article,
+.section3 aside {
+  width: 50%;
+}
+
+.section3__header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  width: 300px;
+  margin: 0 80px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.card {
+  margin: 20px;
+  position: relative;
+}
+.notify {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+  padding: 2px;
+  background-color: #fff;
+}
+.product_price,
+.product_name {
+  font-family: "Oswald", sans-serif;
+}
+.cards_title {
+  margin-left: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  background-image: url(./images/F.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.footer_sections {
+  display: flex;
+  justify-content: space-around;
+}
+.footer_sections div {
+  margin-top: 50px;
+}
+
+.form_section input {
+  border: none;
+  background: none;
+  padding: 10px 0;
+  width: 330px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.arrow {
+  border-bottom: 1px solid black;
+  padding: 8.8px 0;
+  position: absolute;
+}
+.form_section p {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.social_icons span {
+  padding-right: 5px;
+}
+.first_section_links p,
+.second_section_links p {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+.first_section_links ul li,
+.second_section_links ul li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+.first_section_links ul li a,
+.second_section_links ul li a {
+  color: #7e7e7e;
+}
+
+.footer_last_text {
+  margin-top: 20px;
+  text-align: center;
+}
+/* tablet */
+@media screen and (max-width: 800px) and (min-width: 400px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav_link--item {
+    font-size: 10px;
+    padding: 3px;
+    letter-spacing: 0;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  .header_icons span {
+    padding: 0;
+  }
+  .user,
+  .search {
+    display: none;
+  }
+  /* main */
+
+  .section1 article h2 {
+    font-size: 20px;
+
+    margin-left: 25px;
+  }
+  .main_content,
+  .sub_content {
+    font-size: 12px;
+    margin-left: 25px;
+  }
+
+  /* section 2 */
+  .section2 article p {
+    font-size: 10px;
+  }
+  .drop {
+    font-size: 12px;
+  }
+  /* section3 */
+  .section3__header {
+    font-size: 24px;
+    margin-left: 25px;
+  }
+
+  .section3 aside img {
+    margin: 0 20px;
+  }
+  /* footer */
+
+  .footer_sections {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_section_links,
+  .second_section_links,
+  .form_section {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .form_section {
+    margin-left: 20px;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 400px) {
+  .menu {
+    display: block;
+  }
+  .logo {
+    display: flex;
+    margin-left: 25px;
+  }
+  .nav_link--item {
+    display: none;
+  }
+  .user,
+  .search {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* main */
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 article {
+    width: 100%;
+    display: block;
+  }
+  .main_content,
+  .sub_content {
+    font-size: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  .section1 article h2 {
+    font-size: 18px;
+    margin-left: 25px;
+  }
+
+  .section1 aside {
+    width: 100%;
+    display: none;
+  }
+  /* section2 */
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 aside {
+    width: 100%;
+    display: block;
+  }
+  .section2 aside img {
+    margin: 0 10px;
+    width: 300px;
+  }
+  .section2 article {
+    width: 100%;
+    display: block;
+  }
+  .section2 article p {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  /* section3 */
+  .section3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section3 article {
+    width: 100%;
+    display: block;
+  }
+  .section3__header {
+    margin-left: 20px;
+    font-size: 24px;
+    width: auto;
+    line-height: normal;
+  }
+  .section3 aside {
+    width: 100%;
+    display: block;
+  }
+  .section3 aside img {
+    margin: 20px;
+    width: 300px;
+  }
+  .footer_sections {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_section_links,
+  .second_section_links,
+  .form_section {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .form_section {
+    margin-left: 20px;
+    width: 250px;
+  }
+  .form_section input {
+    width: 250px;
+  }
+
+  footer {
+    background-image: url(./images/F.png);
+    background-position: bottom;
+  }
+}
+
+/* SORRY FOR MY MISTAKES, THANKS */
